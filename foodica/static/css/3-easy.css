@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+.card-img-top-air{
+    height: 60px;
+    width: 60px;
+    align-self: center;
+    margin-top: 30px;
+    }
+    .card-title-air{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .card{
+        background-color: #7ed957;
+        border: 1px rgb(204 247 204);
+        margin: 0;
+    }
+    .easysteps
+    {
+        padding: 25px;
+        text-align: center;
+        background-color: #7ed957;
+        margin: 0 0 0;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 50px;
+    }
+
+    
+@media screen and (max-width: 600px) {
+    .easysteps{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .easysteps{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* overflow:scroll; */
+    height: 100%;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.form-label{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.carouselExampleCaptions{
+  background-image: linear-gradient(#eb01a5, #d13531);
+}
+.carousel-img-set {
+  height: 600px;
+  background: url('homebg2.png') no-repeat center center;
+  background-size: 100% 100%;
+  max-width: 100%;
+  /* height: auto; */
+  max-height: 400px;
+  min-width: 70px;
+  margin-right: 0px;
+}
+
+#complaints {
+	color: #7ed957;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.hero-im{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1521791055366-0d553872125f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")no-repeat center;
+    background-size: cover;
+}
+ .sidecont1{
+    /* position: absolute;
+    top: 30%;
+    padding-left: 50vh;
+    overflow: hidden;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 300; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 72px;
+}
+/* .sidecont1 h1{
+    font-size: 72px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .comp-container{
+     max-width: 100%;
+     max-height: 100%;
+  }
+
+  /* .col{
+      width: 40vw;
+  } */
+
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  #cc{
+      height: 100px;
+      width: 500px;
+  }
+#ping{
+    width: 95%;
+    flex-direction: row;
+}
+#ping1{
+    width:70%;
+    margin-left: 68px;
+}
+#ping2{
+    width:30%
+}
+#ping21{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.fform{
+    padding-left: 50px;
+    width: 100%;
+}
+
+.mb-3{
+    width: 70%;
+    height: 70%;
+}
+
+.form-control {
+    display: block;
+    width: 127%;
+}
+#disc{
+    font-size: large;
+    font-weight: 800;
+    padding-left: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+/* #sub{
+    background-color:wheat;
+} */
+/* .card{
+    height: 150px;
+    width: 400px;
+    box-shadow: 10px 10px 5px #888888;
+} */
+/* input:required{
+    color: rgba(255, 0, 0, 0.904);
+} */
+#contact{
+    color: #7ed957;
+}
+@media screen and (max-width: 900px){
+    .fform{
+        padding-left: 14px;
+        width: 100%;
+    }
+       #ping{
+           flex-direction: column;
+       } 
+       #ping2{
+           width: 83%;
+           align-items: center;
+           justify-content: center;
+       }
+       #ping1{
+        margin-left: 40px;
+        width: 95%;
+       }
+       #ping21{
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+}
+@media screen and (max-width: 600px){
+    #ping {
+        width: 91%;
+    }
+}
+
+
+#py {
+    padding-top: 10rem!important;
+  
+}
+
+
+
+@media screen and (max-width:800px) {
+    .carousel-img-set {
+      height: 450px;
+    }
+  }
+  
+
+  
+  
+  @media screen and (max-width:693px) {
+    .carousel-img-set {
+      height: 337px;
+  
+    }
+
+   
+  }
+  @media(max-width: 574px){
+      .footer-col{
+          width: 100%;
+      }
+     
+  }
+  @media screen and (max-width:466px) {
+    .carousel-img-set {
+      height: 256px;
+    }
+    #py{
+        padding-top: 6rem!important;
+    }
+
+  }
+  @media screen and (max-width:400px) {
+    .carousel-img-set {
+      width: 402px;
+      height: 184px;
+    }
+    #py{
+        padding-top: 3rem!important;
+    }
+    .mb-3 {
+        width: 79%;
+        height: 70%;
+    }
+    .fform {
+        padding-left: 0px;
+    }
+    #ping2 {
+        width: 91%;
+        /* padding-left: 2px; */
+    }
+    #ping21 {
+        
+        margin-left: 43px;
+    }
+  }
+  @media screen and (max-width:300px) {
+    .carousel-img-set {
+      width: 400px;
+      height: 184px;
+    }
+ 
+  
+  }
+  @media screen and (max-width:290px) {
+    .carousel-img-set {
+      width: 400px;
+      height: 184px;
+    }
+
+  }
+  @media screen and (max-width:260px) {
+    .carousel-img-set {
+      width: 400px;
+      height: 184px;
+    }
+  
+  }
+  
+  
+ 
+      
+  

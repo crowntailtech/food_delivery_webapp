@@ -1,0 +1,159 @@
+.hero-im{
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("https://d2w1ef2ao9g8r9.cloudfront.net/images/_sameSizeHero/44-Unique-Restaurant-Ideas-to-Inspire-Your-Concept-1.png?mtime=20200424142349&focal=none&tmtime=20210630085714");
+  background-size: cover;
+}
+.sidecont1{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: aliceblue;
+  font-weight: 300;
+}
+.sidecont1 h1{
+  font-size: 60px;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #7ed957;
+  text-decoration: none;
+}
+
+.sidecont1 h2{
+  font-size: 30px;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+.sidecont2{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  overflow: hidden;
+  text-align:right;
+  color: aliceblue;
+  font-weight: 50;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 30px;
+}
+
+@media (max-width:730px) {
+  .sidecont1 h1 {
+      font-size: 38px;
+      font-family: 'Baloo Bhai 2', cursive;
+  }
+  .sidecont1 h2{
+      font-size: 25px;
+     
+  }
+  .hero-im{
+      height: 500px;
+  }
+}
+
+@media (max-width:380px) {
+  .sidecont1 h1 {
+      font-size: 34px;
+      font-family: 'Baloo Bhai 2', cursive;
+  }
+  .sidecont1 h2{
+      font-size: 20px;
+     
+  }
+  .hero-im{
+      height: 500px;
+  }
+}
+
+#accordionFlushExample{
+  background-color:aliceblue;
+  padding: 10vh 52vh;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  /* background-color:rgb(204 247 204); */
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+
+.accordion-collapse{
+max-width: 1400px;
+width: auto;
+}
+
+@media (max-width:250px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+.ques-head{
+  text-align: center;
+}
+
+@media (max-width:350px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:450px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:570px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:670px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+
+@media (max-width:768px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:800px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:1024px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}

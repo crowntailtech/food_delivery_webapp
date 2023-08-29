@@ -1,0 +1,85 @@
+
+#intro-example{
+  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80")no-repeat center;
+      background-size: cover;
+      height:auto;
+  }
+.container_t{
+    left: 150px;
+  width: 200px;
+}
+#accordionFlushExample{
+  background-color: aliceblue;
+  padding: 10vh 52vh;
+}
+
+.accordion-collapse{
+max-width: 1400px;
+width: auto;
+}
+
+@media (max-width:250px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:350px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:450px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:570px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+
+@media (max-width:670px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+
+@media (max-width:768px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:800px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}
+
+@media (max-width:1024px) {
+  #accordionFlushExample{
+    /* font-size: 1px; */
+    padding: 2vh 2vh;
+  }
+  
+}

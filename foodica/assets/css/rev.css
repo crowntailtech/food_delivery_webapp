@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+*{
+
+    margin:0;
+
+    padding: 0;
+
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.review-section{
+
+    /* background: #ec8a1a; */
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjZ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    
+    background-size: cover;
+
+    padding: 40px 0;
+
+    background-attachment: fixed;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.review-section p::before{
+    content: '';
+    position: absolute;
+    background-color: #7ed957;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+    margin-top: 2.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.review-section h3{
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+    
+
+    
+
+}
+
+
+.review-form{
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 0 10px;
+
+    overflow: hidden;
+
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+
+.review-form-text{
+
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 16px 0;
+
+    border: 0;
+
+    background: rgb(248, 241, 241);
+
+    padding: 15px 30px;
+
+    outline: none;
+
+    color: black;
+
+    font-family: 'Baloo Bhai 2', cursive;
+
+    
+
+}
+
+
+
+.message{
+
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 16px 0;
+
+    border: 0;
+
+    background: rgb(248, 241, 241);
+
+    padding: 50px 30px;
+
+    outline: none;
+
+    color: black;
+    padding-top: 20px;
+
+    /* text-align: top; */
+
+}
+
+.skill
+{
+
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    padding: 8px;
+    width: 580px;
+    cursor: pointer;
+    border: none;
+    color: rgb(10, 10, 10);
+    background-color: #7ed957;
+    box-shadow: inset 0 0 0  #7ed957;
+    transition: ease-out 0.3s;
+    outline: none;
+    margin-bottom: 40px;
+   
+}
+
+.skill:hover 
+{
+    box-shadow: inset 580px 0 0 0 #bbbbbb;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+}
+
+
+
+.text{
+
+    font-size: 22px;
+
+    color: white;
+
+    line-height: 30px;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-weight: 400;
+
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .skill{
+        width: 580px;
+        padding: 8px;
+        text-align: center;
+
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 550px) {
+
+    .skill{
+        width: 200px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 176px;
+
+    }
+}
+
+@media only screen and (max-width: 549px) and (min-width: 501px) {
+    .skill{
+        width: 200px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 150px;
+
+    }
+}
+
+
+@media only screen and (max-width: 500px) and (min-width: 450px) {
+    .skill{
+        width: 150px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 147px;
+
+    }
+}
+
+@media only screen and (max-width: 449px) and (min-width: 400px) {
+    .skill{
+        width: 140px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 130px;
+
+    }
+}
+
+
+@media only screen and (max-width: 399px) and (min-width: 350px) {
+    .skill{
+        width: 100px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 130px;
+
+    }
+}
+
+
+@media only screen and (max-width: 349px) and (min-width: 300px) {
+    .skill{
+        width: 90px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 110px;
+
+    }
+}
+
+@media only screen and (max-width: 299px) and (min-width: 250px) {
+    .skill{
+        width: 90px;
+        padding: 2px;
+        text-align: center;
+        margin-left: 100px;
+
+    }
+}
+
+
+@media only screen and (max-width: 280px) and (min-width: 250px) {
+
+    .skill{
+        width: 100px;
+        padding: 1px;
+        text-align: center;
+        margin-left: 78px;
+
+    }
+}
+
+
+
+@media only screen and (max-width: 250px) and (min-width: 200px) {
+
+
+    .skill{
+        width: 100px;
+        padding: 1px;
+        text-align: center;
+        margin-left: 55px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

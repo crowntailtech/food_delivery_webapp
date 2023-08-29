@@ -1,0 +1,46 @@
+.hero-im{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("del_img.jpg")no-repeat center;
+    background-size: cover;
+}
+.sidecont1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: aliceblue;
+    font-weight: 300;
+}
+.sidecont1 h1{
+    font-size: 60px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #7ed957;
+    text-decoration: none;
+}
+
+.sidecont1 h2{
+    font-size: 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.sidecont2{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    overflow: hidden;
+    text-align:right;
+    color: aliceblue;
+    font-weight: 50;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+}
+

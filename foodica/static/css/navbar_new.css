@@ -1,0 +1,93 @@
+.nav_font{
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.prof{
+    border-color: transparent;
+}
+.navbar{
+  width:auto;
+}
+.nav_b{
+    float: right;
+    align-items: center;
+    max-width: 800px;
+    justify-content: flex-end;
+}
+.collapse{
+    width: 100px;
+}
+/* .nav-item a:hover {
+    color: red;
+  } */
+.nav-item{
+justify-content: center;
+font-size: larger;
+color: white;
+}
+
+.nav-link{
+    color: white;
+}
+/* .nav_item
+{
+    padding-right: 20px;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+/* * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #4b0082;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+} */
+/* .coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 3rem;
+  border-color: transparent;
+  color: white;
+  font-family: roboto;
+  font-size: 1rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: white;
+  border-radius: 2rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: #4b0082;
+  transform: scale(1.05);
+  will-change: transform;
+} */

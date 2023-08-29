@@ -1,0 +1,43 @@
+/* 1ST */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+.rambo-head {
+  background-color: #1c1e27;
+  height: 40px;
+}
+
+.rambo-footer {
+  background-color: #1c1e27;
+  height: 40px;
+}
+
+.submit2 {
+  width: 180px;
+  height: 50px;
+  border: none;
+  color: #080808;
+  background-color: #7ed957;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #bbbbbb;
+  transition: ease-out 0.3s;
+  font-size: 16px;
+  outline: none;
+  font-weight: 500;
+}
+
+.submit2:hover {
+  box-shadow: inset 180px 0 0 0 #bbbbbb;
+  cursor: pointer;
+  color: black;
+}
+
+/* 2ND  */
+
+.jambo-head {
+  background-color: #1c1e27;
+  height: 40px;
+}
+
+.jambo-footer {
+  background-color: #1c1e27;
+  height: 40px;
+}

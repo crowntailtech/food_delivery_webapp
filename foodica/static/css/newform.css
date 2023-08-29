@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+#success_message{ display: none;}
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h2{
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.required{
+    color: red;
+  }
+#wrap{
+    padding-top: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#drum{
+    margin-top: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#frm-123{
+    padding-top: 20px;
+}
+
+legend{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+label{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* input{
+    font-family: 'Baloo Bhai 2', cursive;
+} */
+
+#submit
+{
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: #24262b;
+    background-color: #7ed957;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #7ed957;
+    transition: ease-out 0.3s;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#submit:hover 
+{
+    box-shadow: inset 150px 0 0 0 #bbbbbb;
+    cursor: pointer;
+    color: black;
+}
+.hero-im{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://blog.bolt.eu/wp-content/uploads/2021/04/1200x628_best-lunch-ideas_article-header_bolt-food.jpg")no-repeat center;
+    background-size: cover;
+
+}
+legend h2{
+    text-align: center;
+}
+.sidecont1{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    overflow: hidden;
+    text-align: left;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: aliceblue;
+    font-weight: 300;
+}
+.sidecont1 h1{
+    font-size: 72px;
+    font-family: 'Baloo Bhai 2', cursive;;
+}
+.t1{
+    color: #7ed957;
+  }
+.form-control {
+    font:normal ;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 300px){
+    #id-frm{
+        width: 140px;
+        height: 40px;
+    }
+  
+}
+@media screen and (max-width: 240px){
+    #frm-123{
+        padding:5px;
+    }
+   .h2{
+       font-size: 20px;
+   }
+}
+@media screen and (max-width: 1100px){
+    #ring{
+        width: 183px;
+        padding-inline: 40%;
+    }
+}
+@media screen and (max-width: 723px){
+#ring{
+    padding-inline: 37%;
+}
+}
+@media screen and (max-width: 433px){
+    #ring{
+        padding-inline: 24%;
+    }
+    }
+    @media (min-width:220px) and (max-width: 300px){
+        #ring{
+            padding-inline: 13%;
+        }
+        .sidecont1{
+            left: 7%;
+            
+        }
+        .sidecont1 h1{
+            font-size: 35px;
+
+        }
+        .hero-im{
+            height: 250px;
+        }
+        }
+        @media screen and (max-width: 650px){
+            .sidecont1{
+                left: 15%;
+            }
+        }
+        @media (min-width:299px) and (max-width: 400px){
+            .sidecont1{
+                left: 5%;
+                
+            }
+            .sidecont1 h1{
+                font-size: 50px;
+
+            }
+            .hero-im{
+                height: 300px;
+            }
+        }
+
+        #checkboxform {
+            padding-left: 38%;
+        }
+
+        @media (max-width:314px) {
+            #checkboxform {
+                padding-left: 2%;
+                font-size: 13px;
+            
+            }
+        }

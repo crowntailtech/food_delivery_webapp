@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodica.in</title>
+
+  <link rel="stylesheet" href="static/css/newhome.css">
+  <link rel="stylesheet" href="static/css/home_footer.css">
+  <link rel="stylesheet" href="static/css/homefront.css">
+  <link rel="stylesheet" href="static/css/howdelivery.css">
+
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+  <link rel="stylesheet" href="static/css/gallery2.css">
+  <!--<link rel="stylesheet" href="css/howdeliverywork.css">-->
+  <link rel="stylesheet" href="static/css/recommendation.css">
+  <link rel="stylesheet" href="static/css/partner.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>-->
+  <!--  -->
+  <link href="static/css/before_navbar_new.css" rel="stylesheet">
+  <link href="static/css/navbar_new.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky">
+    <div class="container-fluid">
+      <a href="home"><img class="logo-img" src="static/home/logo.png" width="60" height="60" ALT="align box"
+          ALIGN=CENTER></a>
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
+        <!-- <div class="no_use">
+
+          </div> -->
+        <div class="navbar-nav w-100">
+          <a class="nav-link mb-lg-0 coolBeans cool" aria-current="page" href="home">
+
+            Home
+          </a>&emsp;&emsp;
+          <a class="nav-link coolBeans cool2" href="aboutus">
+
+            About Us
+          </a>&emsp;&emsp;
+          <!-- <a class="nav-link coolBeans cool3" href="">
+
+            Orders
+          </a>&emsp;&emsp; -->
+          <a class="nav-link coolBeans" href="contactus">
+
+            Contact Us
+          </a>&emsp;&emsp;
+        </div>
+
+
+        {% if user.is_authenticated %}
+        <div class="nav_b nav navbar-nav ml-auto w-100 justify-content-end" id="left_sign">
+
+          <div class="dropdown">
+            <!--Dropdown CSS at newhome.css-->
+            <button type="button" class="btn btn-outline-light prof dropbtn" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                </path>
+              </svg> {{user.first_name}}
+            </button>
+            <!-- dropdown content -->
+            <div class="dropdown-content">
+              <a href="myprofile">My Profile</a>
+              <a href="user_logout">Logout</a>
+            </div>
+          </div>
+          {% else %}
+          <div class="nav_b nav navbar-nav ml-auto w-100 justify-content-end" id="left_sign">
+
+            <a href="user_login">
+              <button type="button" class="btn btn-outline-light prof " data-bs-toggle="modal"
+                data-bs-target="#exampleModal2" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Sign Up/sign In">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z">
+                  </path>
+                  <path fill-rule="evenodd"
+                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z">
+                  </path>
+                </svg> Sign Up/Sign In
+              </button>
+            </a>
+          </div>
+          {% endif %}
+        </div>
+
+      </div>
+  </nav>
+  <section class="firstsection carousel-img-set">
+    <div class="box-main">
+      <div class="fhalf">
+        <p>
+        <h1 class="text-big"><b> FOODICA</b></h1>
+        <h3 class="text-small">A TRENDY FOOD DELIVERY <br> <br> Mangao Pet Bharke...!!!!</h3>
+        </p>
+        <!-- <a class="butt" href="">
+          <button class="btn1">SUBSCRIBE</button>
+        </a> -->
+        <div class="follow butt">
+          <a href="error"><button class="submit1">Order Now</button></a>
+        </div>
+      </div>
+      <div class="shalf">
+        <img src="static/home/homepagedish.png" alt="logo">
+
+      </div>
+    </div>
+  </section>
+  <div id="tours">
+    <div class="container">
+      <h2>Discover the best food & drinks</h2>
+      <form action="#">
+        <input id="location" placeholder="Location" type="text" />
+        <button class="button" type="submit">SEARCH</button>
+      </form>
+    </div>
+
+    <div class="arrow">
+      <a href="#" title="back to top"><span class="fas fa-angle-up"></span></a>
+    </div>
+
+
+    <ul>
+      <li>
+        <div>
+          <!-- <h3>Denali</h3>
+                    <h4>Alaska</h4> -->
+        </div>
+        <!-- Image by Maureen [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Flickr, https://www.flickr.com/photos/amerune/9374725724 -->
+        <img alt="Denali, Alaska" src="static/home/1.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Mirror Lake</h3>
+                    <h4>California</h4> -->
+        </div>
+        <!-- Image By chensiyuan (chensiyuan) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 4.0-3.0-2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/4.0-3.0-2.5-2.0-1.0)], via Wikimedia Commons, https://upload.wikimedia.org/wikipedia/commons/7/70/Yosemite_national_park_mirror_lake_2010u.JPG -->
+        <img alt="Mirror Lake, California" src="static/home/2.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Antelope Canyon</h3>
+                    <h4>Arizona</h4> -->
+        </div>
+        <!-- Image By Moyan Brenn [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Flickr, https://www.flickr.com/photos/aigle_dore/5951674773 -->
+        <img alt="Antelope Canyon, Arizona" src="static/home/18.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Key West</h3>
+                    <h4>Florida</h4> -->
+        </div>
+        <!-- Image By Ricymar Photography [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Flickr, https://www.flickr.com/photos/ricardo_mangual/5749480168 -->
+        <img alt="Key West, Florida" src="static/home/19.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Saint Mary Lake</h3>
+                    <h4>Montana</h4> -->
+        </div>
+        <!-- Image By Ricymar Photography [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Flickr, https://www.flickr.com/photos/ricardo_mangual/5749480168 -->
+        <img alt="Saint Mary Lake, Montana" src="static/home/6.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Moab</h3>
+                    <h4>Utah</h4> -->
+        </div>
+        <!-- Image By Gridge [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 4.0-3.0-2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/4.0-3.0-2.5-2.0-1.0)], via Wikimedia Commons, https://upload.wikimedia.org/wikipedia/commons/0/06/Delicatearch1.jpg -->
+        <img alt="Moab, Utah" src="static/home/7.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Waipio Valley</h3>
+                    <h4>Hawaii</h4> -->
+        </div>
+        <!-- Image By Paul Bica [CC-BY-2.0 (http://creativecommons.org/licenses/by/2.0)], via Flickr, https://www.flickr.com/photos/dexxus/5652914929 -->
+        <img alt="Waipio Valley, Hawaii" src="static/home/17.jpg" />
+      </li>
+      <li>
+        <div>
+          <!-- <h3>Carlsbad Caverns</h3>
+                    <h4>New Mexico</h4> -->
+        </div>
+        <!-- Image By Guinther [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons, https://upload.wikimedia.org/wikipedia/commons/d/dd/Carlsbad_Interior_Formations.jpg -->
+        <img alt="Carlsbad Caverns, New Mexico" src="static/home/9.jpg" />
+      </li>
+    </ul>
+  </div><br><br><br>
+
+  <!--How Delivery Works-->
+
+  <div class="howdeliveryworks">
+    <div class="deliverycontain">
+      <center>
+        <h1>How Delivery Works</h1>
+      </center>
+      <h3 class="caption">
+        At Foodica, we are doing everything we can to support our
+        community – our customers, delivery partners, restaurant partners, and the daily wage workers who have been
+        impacted the
+        most in these times.
+      </h3>
+    </div>
+    <div class="hdw">
+      <div class="hdwcards">
+        <img src="static/img/placeanorder.png" alt="" class="hdwimg">
+
+      </div>
+      <div class="hdwcards">
+        <img src="static/img/foodprep.png" alt="" class="hdwimg ">
+
+      </div>
+      <div class="hdwcards">
+        <img src="static/img/deliverjinn.png" alt="" class="hdwimg">
+
+      </div>
+    </div>
+  </div><br><br><br><br>
+
+  <!-- Become a Partner - CSS : @partner.css -->
+  <div class="partner1">
+    <div class="containerp">
+      <div class="cardp">
+        <div class="contentp">
+          <h2> Become our Jinn</h2>
+          <p>Earn competitive salary as delivery</p>
+          <p>courier working flexible schedule.</p>
+          <!-- <a href="delivery.html">
+          <br><button class="buttonp">Start Earning</button></br>
+		  </a> -->
+          <div class="follow">
+            <a href="delivery_partner"><button class="submit_partner">Start Earning</button></a>
+          </div>
+        </div>
+        <img src="static/home/courierpartner.png">
+      </div>
+      <div class="cardp">
+        <div class="contentp">
+          <h2>Become a Partner</h2>
+          <p>Grow your business by reaching </p>
+          <p>new customers.</p>
+          <!-- <a href="partnerwithus.html">
+          <br><button class="buttonp">Partner with us</button></br>
+		  </a> -->
+          <div class="follow">
+            <a href="partner_with_us"><button class="submit_partner">Partner with us</button></a>
+          </div>
+        </div>
+        <img src="static/home/chefpartner.png">
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <!--Become a Partner end -->
+
+  <!-- // gallery -->
+  <div class="gallery">
+    <div class="grids">
+      <div class="card-one">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-1">
+            <div class="text-box">
+              <h3 class="text-box-top">FOODS</h3>
+              <h1 class="text-box-middle">Awesome</h1>
+              <!-- <h3 class="text-box-lower">
+                Food is any substance consumed to provide nutritional support
+                for an organism. Food is usually of plant, animal or fungal
+                origin, and contains essential nutrients, such as
+                carbohydrates, fats, proteins, vitamins, or minerals.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-1">
+            <div class="text-box">
+              <h3 class="text-box-top">FOODS</h3>
+              <h1 class="text-box-middle">Awesome</h1>
+              <!-- <h3 class="text-box-lower">
+                Food is any substance consumed to provide nutritional support
+                for an organism. Food is usually of plant, animal or fungal
+                origin, and contains essential nutrients, such as
+                carbohydrates, fats, proteins, vitamins, or minerals.
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-two">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-2">
+            <div class="text-box">
+              <h3 class="text-box-top">Healthy</h3>
+              <h1 class="text-box-middle">JUICES</h1>
+              <!-- <h3 class="text-box-lower">
+                "Let food be your medicine and medicine be your food"
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-2">
+            <div class="text-box">
+              <h3 class="text-box-top">Healthy</h3>
+              <h1 class="text-box-middle">DRINKS</h1>
+              <!-- <h3 class="text-box-lower">
+                "Let food be your medicine and medicine be your food"
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-three">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-3">
+            <div class="text-box">
+              <h3 class="text-box-top">Tasty</h3>
+              <h1 class="text-box-middle">CAKES</h1>
+              <!-- <h3 class="text-box-lower">
+                From the creamy layers to the designing, everything in a cake
+                is a treat for the eyes and soul.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-3">
+            <div class="text-box">
+              <h3 class="text-box-top">Crunchy</h3>
+              <h1 class="text-box-middle">COOKIES</h1>
+              <!-- <h3 class="text-box-lower">
+                Cookies that are set during retrieval of these components are
+                called third-party cookies.
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-four">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-4">
+            <div class="text-box">
+              <h3 class="text-box-top">Yummy</h3>
+              <h1 class="text-box-middle">BIRYANI</h1>
+              <!-- <h3 class="text-box-lower">
+                Biryani is a mixed rice dish originating among the Muslims of
+                the Indian subcontinent.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-4">
+            <div class="text-box">
+              <h3 class="text-box-top">Yummy</h3>
+              <h1 class="text-box-middle">Fried Rice</h1>
+              <!-- <h3 class="text-box-lower">
+                Fried Rice is a dish of cooked rice that has been stir-fried
+                in a work or a frying pan.
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-five">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-5">
+            <div class="text-box">
+              <h3 class="text-box-top">DELICIOUS</h3>
+              <h1 class="text-box-middle">Pizza</h1>
+              <!-- <h3 class="text-box-lower">
+                Pizza is an Italian dish consisting of a usually round,
+                flattened base of leavened wheat-based dough.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-5">
+            <div class="text-box">
+              <h3 class="text-box-top">CLASSIC</h3>
+              <h1 class="text-box-middle">Burger</h1>
+              <!-- <h3 class="text-box-lower">
+                A Sandwich Consisting of one or more cooked PattiesS
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-six">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-6">
+            <div class="text-box">
+              <h3 class="text-box-top">SPICY</h3>
+              <h1 class="text-box-middle">Noodles</h1>
+              <!-- <h3 class="text-box-lower">
+                Noodles are a type of food made from unleavened dough which is
+                rolled flat and cut, stretched or extruded, into long strips
+                or strings.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-6">
+            <div class="text-box">
+              <h3 class="text-box-top">Tasty</h3>
+              <h1 class="text-box-middle">Momos</h1>
+              <!-- <h3 class="text-box-lower">
+                Momo is a type of East and South Asian steamed filled
+                dumpling.
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-seven">
+        <div class="card">
+          <div class="card__side card__side--front" id="front-7">
+            <div class="text-box">
+              <h3 class="text-box-top">FOODS</h3>
+              <h1 class="text-box-middle">Awesome!</h1>
+              <!-- <h3 class="text-box-low">
+                Food is any substance consumed to provide nutritional support
+                for an organism.
+              </h3> -->
+            </div>
+          </div>
+          <div class="card__side card__side--back" id="back-7">
+            <div class="text-box">
+              <h3 class="text-box-top">FOODS</h3>
+              <h1 class="text-box-middle">Awesome!</h1>
+              <!-- <h3 class="text-box-lower">
+                Food is any substance consumed to provide nutritional support
+                for an organism.
+              </h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <div class="last">
+    <footer>
+      <div class="footcontain">
+        <div class="rows">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutus">about us</a></li>
+              <li><a href="error">our services</a></li>
+              <li><a href="term-&-conditions">privacy policy</a></li>
+              <li><a href="error">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="help-&-support">FAQ</a></li>
+              <li><a href="contactus">Contact Us</a></li>
+              <li><a href="error">order status</a></li>
+              <li><a href="error">payment getaways</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <ul>
+              <li><a href="help-&-support">Support</a></li>
+              <li><a href="complaints">Complaints</a></li>
+              <li><a href="error">Media</a></li>
+              <li><a href="term-&-conditions">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/techmihirnaik/">
+                <i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://instagram.com/techmihirnaik?igshid=9jia5fme3o4r">
+                <i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/techmihirnaik">
+                <i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <br />
+            <h4>Subscribe For More</h4>
+            <form>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your E-mail" style="height: 38px;"
+                  aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+              <div class="follow">
+                <button class="submit1" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrighttext">
+      <p><b><em>Copyright © 2021 All rights reserved | Managed by Techmihirnaik</em></b></p>
+    </div>
+  </div>
+  <!-- <div id='main-footer'>
+        <p>&copy 2016</p>
+    </div> -->
+</body>
+<script src="static/js/gallery2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/9c720a986d.js" crossorigin="anonymous"></script>
+<script src="static/js/newhome.js"></script>
+
+</html>

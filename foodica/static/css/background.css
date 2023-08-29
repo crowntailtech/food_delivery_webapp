@@ -1,0 +1,190 @@
+/* back to top */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+.arrow{
+	position: fixed;
+	bottom: 30px;
+	background-color: black;
+	border-radius: 50%;
+	display: flex;
+    justify-content: center;
+	right: 30px;
+	z-index: 9;
+	align-items: center;
+  }
+  .arrow a{
+	height: 39px;
+	width: 37px;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+	background:transparent;
+	display: block;
+	border-radius: 3px;
+  }
+  .arrow a span{
+	color: #7ed957;
+	font-size: 18px;
+	
+    justify-content: center;
+	line-height: 39px;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+  }
+
+.background {
+  height: 650px;
+  width: 100%;
+  /* background-image: url("https://www.eitfood.eu/media/hero/image.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://d2w1ef2ao9g8r9.cloudfront.net/images/_sameSizeHero/44-Unique-Restaurant-Ideas-to-Inspire-Your-Concept-1.png?mtime=20200424142349&focal=none&tmtime=20210630085714");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: table;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  min-width: 77px;
+  min-height: 500px;
+}
+
+.side-heading {
+  font-weight: 600;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: rgb(254, 255, 255);
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  transform: translate(-50%, -20%);
+  width: 550px;
+}
+
+.good {
+  font-size: 60px;
+  margin-left: 63px;
+}
+
+.hello {
+  font-size: 30px;
+  margin-left: 67px;
+}
+.bie {
+  right: 31.5px;
+  font-weight: 500;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: rgb(254, 255, 255);
+  position: absolute;
+  top: 15%;
+  transform: translate(-20%, -10%);
+}
+
+@media screen and (max-width: 1024px) {
+  .side-heading {
+    font-weight: 600;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(254, 255, 255);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -20%);
+    width: 350px;
+  }
+
+  .good {
+    font-size: 50px;
+  }
+
+  .bie {
+    right: -50.5px;
+    font-weight: 500;
+    position: absolute;
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bie {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .side-heading {
+    width: 390px;
+    margin-left: 25%;
+    text-align: center;
+    top: 19%;
+  }
+
+  .good {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bie {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .side-heading {
+    width: 400px;
+    margin-left: 25%;
+    text-align: center;
+    top: 22%;
+  }
+
+  .good {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .bie {
+    font-size: 20px;
+    margin-left: 22%;
+    text-align: center;
+  }
+
+  .side-heading {
+    top: 30%;
+    text-align: center;
+    margin-left: 25%;
+    width: 300px;
+  }
+
+  .good {
+    font-size: 27px;
+    margin-right: 79px;
+  }
+  .hello {
+    font-size: 18px;
+    margin-left: -27px;
+  }
+
+  @media screen and (max-width: 280px) {
+    .bie {
+      font-size: 18px;
+      margin-left: 20%;
+      text-align: center;
+    }
+
+    .side-heading {
+      top: 30%;
+      text-align: center;
+      margin-left: 25%;
+      width: 300px;
+    }
+    .hello {
+      font-size: 16px;
+      margin-left: 2px;
+    }
+
+    .good {
+      font-size: 25px;
+      margin-left: 19px;
+      margin-right: 22px;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+/* Heading CSS */
+.deliverycontain h1
+ {
+    font-size: 50px;
+    position: relative;
+    justify-content: center ;
+    align-items: center;
+    display:flex;
+    margin: 0 0 20px 0;
+    text-transform: none;
+    color:black;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+ }  
+
+ .deliverycontain h3{
+     padding-right: 10rem;
+     padding-left: 10rem;
+     padding-bottom: 3rem;
+     text-align: center;
+     font-family: 'Baloo Bhai 2', cursive;
+ }
+
+ @media(max-width:438px){
+     .deliverycontain h3{
+         padding-left: 5rem;
+         padding-right: 5rem;
+     }
+ }
+ @media(max-width: 788px){
+     .deliverycontain h1{
+         font-size: 30px;
+     }
+ }
+
+ 
+ @media(max-width: 258px){
+    .deliverycontain h1{
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+/* how delivery cards */
+.hdw{
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+}
+.hdwcards{
+    padding: 20px;
+}
+.hdwimg{
+    height: 380px;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.hdwimg:hover{
+    box-shadow: 0 8px 16px 0 #7ed957;
+    box-shadow: 100%;
+
+}
+
+@media (max-width:1300px){
+    .hdwimg{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width:1025px){
+    .hdwimg{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width:842px){
+    .hdwimg{
+        height: 260px;
+        width: 260px;
+    }
+}
+@media (max-width:770px){
+    .hdwimg{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width:715px){
+    .hdwimg{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media (max-width:580px){
+    .hdwimg{
+        height: 185px;
+        width: 185px;
+    }
+}
+@media (max-width:555px){
+    .hdw{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    .hdwimg{
+        height: 300px;
+        width: 300px;
+    }
+    .nv{
+        display: none;
+    }
+    .vn{
+        display:flex;
+    }
+}
+@media (max-width:330px){
+    .hdwimg{
+        height: 250px;
+        width: 250px;
+    }
+  
+}
+@media (max-width:250px){
+    .hdwimg{
+        height: 200px;
+        width: 200px;
+    }
+   
+}
+ /* Below cards */
+  
+ /* .belowcard{
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+     flex-wrap: wrap;
+}
+.belowcard1{
+  padding: 20px;
+}
+.belowcardimg{
+    height: 450px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.belowcardimg:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+ @media (max-width:1300px){
+    .belowcardimg{
+        height: 220px;
+        width: 220px;
+    }
+}
+@media (max-width:1025px){
+    .belowcardimg{
+        height: 200px;
+        width: 200px;
+    }
+}
+@media (max-width:842px){
+ .belowcardimg {
+        height: 190px;
+        width: 190px;
+    }
+}
+@media (max-width:770px){
+  .belowcardimg{
+        height: 150px;
+        width: 150px;
+    }
+}
+@media (max-width:715px){
+  .belowcardimg{
+        height: 125px;
+        width: 125px;
+    }
+}
+@media (max-width:580px){
+  .belowcardimg{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media (max-width:555px){
+  .belowcard{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+     flex-wrap: wrap;
+     }
+     .belowcardimg{
+        height: 120px;
+        width: 120px;
+    }
+ 
+}
+@media (max-width:330px){
+  .cardimg{
+        height: 110px;
+        width: 110px;
+    }
+  }
+@media (max-width:250px){
+  .cardimg{
+        height: 100px;
+        width: 100px;
+    }
+  }   */

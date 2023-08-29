@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+  background:rgb(228, 226, 226);
+  background-size: cover;
+  overflow: scroll;
+  
+}
+::selection{
+  background:#7ed957;
+}
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 120px auto;
+}
+.wrapper{
+  width: 100%;
+  background: #fff; 
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #7ed957;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #7ed957;
+  box-shadow: inset #7ed957;
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #7ed957;
+  border: 1px solid #7ed957;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #72e740;
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: 6rem;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background:#7ed957;
+  border: 1px solid #7ed957;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: rgb(161, 163, 161);
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a{
+  color: #7ed957;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width:270px) {
+    .wrapper form .signup-link{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+      }
+      .wrapper form .button input{
+        font-size: 15px;
+       
+      }
+      .wrapper form .pass a{
+        font-size: 12px;
+        margin-left: 1rem;
+      }
+      .wrapper form .row i{
+       
+        
+        font-size: 10px;
+        
+      }
+      .wrapper .title{
+
+        font-size: 20px;
+}
+}

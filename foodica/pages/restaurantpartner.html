@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Partner Registration</title>
+  <link rel="stylesheet" href="static/css/restaurantpartner.css">
+  <link rel="stylesheet" href="static/css/restaurant_footer.css">
+  <link rel="stylesheet" href="static/css/progressbar.css">
+  <link rel="stylesheet" href="static/css/form.css">
+
+  <!--Important link for footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!--Page Header with Image-->
+
+  <div class="bg-image">
+    <div class="mainheading">
+      <h1><span>PARTNER WITH FOODICA</span></h1>
+      <span class="des">Get listed on India's leading online food delivery marketplace today</span>
+    </div>
+
+  </div>
+  <div class="arrow"> <!--Back to top-->
+    <a href="#" title="back to top" ><span class="fas fa-angle-up"></span></a>
+ </div>
+
+    <!--Progress Bar-->
+    
+    <div class="progress  ">
+      <div id="stepProgressBar">
+      
+        <div class="step "> 
+
+          <div class="bullet">1</div>
+          <p class="step-text">Restaurant Details</p>
+        </div>
+        <div class="step ">
+
+          <div class="bullet">2</div>
+          <p class="step-text">FSSAI Details</p>
+        </div>&emsp;
+        <div class="step ">
+
+          <div class="bullet">3</div>
+          <p class="step-text">Owner Info</p>
+        </div>&emsp;
+        <div class="step ">
+
+          <div class="bullet">4</div>
+          <p class="step-text">GST Details</p>
+        </div>&emsp;
+        <div class="step ">
+
+          <div class="bullet">5</div>
+          <p class="step-text">Bank Details</p>
+        </div>
+        <div class="step ">
+
+          <div class="bullet">6</div>
+          <p class="step-text">Acknowledgement & Sign</p>
+        </div>
+      </div>
+    
+
+    </div>
+  </div>
+  <div class="arrow">
+    <a href="#" title="back to top" ><span class="fas fa-angle-up"></span></a>
+ </div>
+ {% for message in messages %}
+ <div class="alert alert-success">
+     <p style="color:green">{{ message }}</p>
+ </div>
+ {% endfor %}
+
+
+  <!--FORMS START  -->
+
+  <form id="regForm" action="{% url 'restaurantpartner' %}" method="POST" enctype="multipart/form-data">
+    <!-- <h1 class="head1"><u>Foodica For Business</u></h1> -->
+    {% csrf_token %}
+    <div class="tab">
+      <!-- <br><br> -->
+      <h2 class="head1">Restaurant Details</h2><br>
+      <p> Enter Restaurant Name<input placeholder="Enter Restaurant Name" name="Restaurant_Name" class="details"></p><br>
+      <p>Enter Mobile Number<input placeholder="Enter Mobile Number" name="Mobile_Number" class="details" type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10"
+          maxlength="10" required></p><br>
+          <p> Alternate Mobile Number<input placeholder="Alternate Mobile Number" name="own_mobile" class="details" pattern="[1-9]{1}[0-9]{9}"
+            minlength="12" maxlength="12"></p><br>
+      <p>
+        <label for="yes_no_radio">Do you want to get Foodica updates via Whatsapp?&emsp;
+
+          <input type="radio" name="yes_no" checked>Yes</input>&emsp;
+          <input type="radio" name="yes_no">No</input>
+
+      </p><br>
+      <p>Enter Email Address <input type="email" placeholder="example@gmail.com" name="Email" class="details"></p><br>
+      <!-- <p> Enter Address <input type="text" placeholder="" class="details" ></p> -->
+      <!-- <p>Enter Landmark<input placeholder=" " class="details" ></p> -->
+    </div>
+    <div class="tab">
+      <h2 class="head1">FSSAI DETAILS</h2><br>
+      <p>Enter FSSAI Registration Number<input placeholder="Enter FSSAI Registration Number" class="details" name="fssai_num" required type="text"></p><br>
+      <p>Enter FSSAI Expiration Date</p><br>
+      <p><input type="date" placeholder="FSSAI Expiration Date" name="fssai_exp_date" class="details"></p>
+    </div>
+    <div class="tab">
+      <h2 class="head1">Owner Info</h2><br>
+      <p>Enter Owner Name<input placeholder="Owner Name" name="own_name" class="details"></p><br>
+      <p>Aadhar Card Number<input placeholder="8888 8888 XXXX" name="own_aadhar" type="text" class="details" pattern="[1-9]{1}[0-9]{9}"
+          minlength="12" maxlength="12"></p><br>
+      <p>Upload Aadhar Card</p><br>
+      <p> <input type="file" id="myFile" name="aadhar_file" class="upload"> </p><br>
+      <p>Address<input placeholder="Address" name="own_address" class="details"></p><br>
+      <!-- <p>City<input placeholder=""  name="City"class="details"></p> -->
+      <!-- <p>State<input placeholder=""  name="state"class="details"></p> -->
+      <!-- <p>Pin Code<input placeholder=""  name="pin" type="number"class="details"></p> -->
+      <p> Select Your City
+        <li name="City" class="details">Dehradhun</li>
+      </p>
+    </div>
+    <div class="tab">
+      <h2 class="head1">GST&PAN CARD Details</h2><br>
+      <p>Enter GST Registration Number<input placeholder="Enter GST Registration Number" name="gst_num" class="details"></p><br>
+      <p>Upload GST Certificate <input type="file" id="myFile" name="gst_file"></p><br>
+
+      <p>Enter PAN CARD Number<input placeholder="HHHH11XX" name="pan_num" class="details"></p><br>
+      <p>Upload PAN CARD <input type="file" id="myFile" name="pan_file"></p>
+    </div>
+    <div class="tab">
+      <h2 class="head1">Bank Details</h2><br>
+      <p>Enter Bank Account Number<input placeholder="Enter Bank Account Number" name="acc_num" type="number" class="details" pattern="[1-9]{1}[0-9]{9}"></p><br>
+      <p>Enter Bank Name <input placeholder="Enter Bank Name" name="bank_name" class="details"></p><br>
+      <p>Enter Branch Name <input placeholder="Enter Branch Name" name="branch_name" class="details"></p><br>
+      <p>Enter IFSC CODE <input placeholder="Enter IFSC CODE" name="ifsc_code" class="details"></p>
+    </div>
+    <div class="tab">
+      <h2 class="head1">E-Sign & Acknowledgement</h2><br>
+      <p><input type="checkbox" id="terms" name="terms" class="upload" value="T&C" required>
+        <label for="terms"> Check here to indicate that you have read & agree to all the <a href="#">T&C</a>of The
+          FOODICA Business Partner and FOODICA</label><br><br><br>
+      </p>
+      <p>Upload E-Sign <input type="file" id="myFile" name="sign_file" class="upload" required></p><br>
+      <p>Upload Owner's Photo <input type="file" id="myFile" name="img_file" class="upload" required></p><br>
+      <p>Upload Menu <input type="file" id="myFile" name="menu_file" class="upload"></p>
+
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="butt09">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)" class="butt09">Next</button>
+      </div>
+    </div>
+  </form>
+
+  <!--Footer-->
+
+  <div class="last">
+    <footer>
+      <div class="footcontain">
+        <div class="rows">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="aboutus">about us</a></li>
+              <li><a href="error">our services</a></li>
+              <li><a href="term-&-condition">privacy policy</a></li>
+              <li><a href="error">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="help-&-support">FAQ</a></li>
+              <li><a href="contactus">Contact Us</a></li>
+              <li><a href="error">order status</a></li>
+              <li><a href="error">payment getaways</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <ul>
+              <li><a href="help-&-support">Support</a></li>
+              <li><a href="complaints">Complaints</a></li>
+              <li><a href="error">Media</a></li>
+              <li><a href="term-&-conditions">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/techmihirnaik/"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://instagram.com/techmihirnaik?igshid=9jia5fme3o4r"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/techmihirnaik"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <br />
+            <h4>Subscribe For More</h4>
+            <form>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your E-mail" style = "height: 38px; width: 120px;"
+                  aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div><br>
+              <div class="follow">
+                <button class="submit1" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrighttext">
+      <p><b><em>Copyright © 2021 All rights reserved | Managed by Techmihirnaik</em></b></p>
+    </div>
+  </div>
+
+      <script src="static/js/restaurantpartner.js"></script>
+
+</body>
+
+</html>

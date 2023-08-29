@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap');
+.btn {
+  margin-left: 80%;
+  margin-top: 180px;
+  width: 109px;
+  font-family: 'Baloo Bhai 2', cursive;
+  background-color: #7ed957;
+  box-shadow: inset 0 0 0 0 #bbbbbb;
+  transition: ease-out 0.3s;
+}
+.btn:hover {
+  box-shadow: inset 150px 0 0 0 #bbbbbb;
+  background-color: #bbbbbb;
+  cursor: pointer;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn {
+    margin-left: 65%;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    margin-left: 42%;
+    margin-top: 425px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    margin-left: 40%;
+    margin-top: 420px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .btn {
+    margin-left: 36%;
+    margin-top: 390px;
+  }
+}
